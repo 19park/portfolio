@@ -12,7 +12,7 @@ export function init() {
         {
             // 0
             type: 'sticky',
-            heightNum: 30, // 브라우저 높이의 5배로 scrollHeight 세팅
+            heightNum: 14, // 브라우저 높이의 n배
             scrollHeight: 0,
             objs: {
                 container: document.querySelector('#scroll-section-0'),
@@ -25,7 +25,7 @@ export function init() {
                 videoImageCount: 51,
                 imageSequence: [0, 50],
                 canvas_opacity: [1, 0, { start: 0.9, end: 1 }],
-                backgroundColor: [1, 0, { start: 0.5, end: 1 }],
+                backgroundColor: [1, 0, { start: 0.6, end: 1 }],
                 messageA_opacity_in: [0, 1, { start: 0.1, end: 0.2 }],
                 messageA_translateY_in: [20, 0, { start: 0.1, end: 0.2 }],
                 messageA_opacity_out: [1, 0, { start: 0.25, end: 0.3 }],

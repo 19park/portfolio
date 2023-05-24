@@ -13,18 +13,18 @@ onMounted(init);
   </div>
   <div class="container">
     <section class="scroll-section" id="scroll-section-0">
-      <h1>test..</h1>
+      <h1>Hello</h1>
 
       <div class="sticky-elem sticky-elem-canvas">
         <canvas id="video-canvas-0" width="1920" height="1080"></canvas>
       </div>
       <div class="sticky-elem main-message a">
-        <p>text</p>
+        <p>evolution..</p>
       </div>
     </section>
 
     <footer>
-      blah...
+      footer area..
     </footer>
   </div>
 </template>
@@ -36,6 +36,29 @@ onMounted(init);
 .scroll-section {
   position: relative;
   padding-top: 50vh;
+
+  .main-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 35vh;
+    margin: 5px 0;
+    height: 3em;
+    font-size: 2.5rem;
+    opacity: 0;
+
+    p {
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    small {
+      display: block;
+      font-size: 1.2rem;
+      margin-bottom: .5em;
+    }
+  }
 
   /**
     기본적으로 보이지않고, body의 id에 따라서 스크롤이 어떤섹션에 위치했을때 보일지 정한다.
@@ -59,9 +82,26 @@ onMounted(init);
   }
 }
 
-#show-scene-0 #scroll-section-0 .sticky-elem {
-  display: block;
-  will-change: transform, opacity;
+#show-scene-0 {
+  #scroll-section-0 {
+    color: #fff;
+    h1 {
+      position: relative;
+      top: -10vh;
+      z-index: 5;
+      font-size: 4rem;
+      text-align: center;
+    }
+    .sticky-elem {
+      display: block;
+      will-change: transform, opacity;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
 }
 
 .loading {
