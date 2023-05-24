@@ -22,12 +22,14 @@ onMounted(init);
         <p>text</p>
       </div>
     </section>
+
+    <footer>
+      blah...
+    </footer>
   </div>
 </template>
 
 <style scoped lang="scss">
-@import "assets/scss/common";
-
 .container {
   overflow-x: hidden;
 }
